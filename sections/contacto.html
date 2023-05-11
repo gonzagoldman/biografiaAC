@@ -5,74 +5,66 @@
     <meta name="description" content="Contacto con Andres Calamaro">
     <meta name="keywords" content="Andres Calamaro, Contacto, Nombre, Apellido, E-Mail">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e78d1d0e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilos.css"> 
     <link rel="stylesheet" href="../css/main.css">  
 </head>
    
 <body>
 <div id="wrapper">
-    <header id="header">
-        <div class="container-nav">
-            <a class="logo" href="../index.html">Andrés Calamaro</a>
-            <nav class="navigation">
-               <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="biografia.html">Biografia</a></li>
-                  <li><a href="discografia.html">Discografia</a></li>
-                  <li><a href="recitales.html">Proximos Recitales</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-               </ul>
-            </nav>
-        </div>    
+    <header>
+        <nav class="menu-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="../index.html" class="logo">Andrés Calamaro</a>
+            <ul class="nav-bar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="discografia.html">Discografia</a></li>
+                <li><a href="recitales.html">Proximos Recitales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="formulario">
-        <h1 class="contactanos">¡CONTACTANOS!</h1>
-        <form action="contacto.html" method="get" enctype="multipart/form-data">
-            <fieldset>
-                <legend>Datos Personales</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
-                <br>
-                <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
-                <br>
-                <br>
-                <label for="e-mail">E-Mail</label>
-                <input type="text" name="e-mail" id="e-mail" placeholder="Ingresa tu e-mail">
-                <br>
-                <br>
-                <div>
-                <label for="asunto">Asunto</label>
-                <select name="Asunto">
-                    <option value="Entradas">Entradas</option>
-                    <option value="Shows">Shows</option>
-                    <option value="Otros">Otros</option>
-                </select>
-                </div>
-                <br>
-                <br>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" rows="10" maxlength="500" cols="100"></textarea>
-                </div>
-                <br>
-                <br>
-                <div>He leido y acepto la Politica de privacidad
-                <input type="checkbox" name="acepta" value="1"> 
-                </div>
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </fieldset>
-        </form>
-        <div class="info-sitio">
-        <p>Este sitio web no es el oficial, se hizo con fines de aprendizaje y motivacion</p>
-        <p>Desarrollador: Santiago Burke</p>
-        </div>
+        <div class="contacto-caja">
+            <div class="contact">
+                <h1 class="titulo-contacto">¡CONTACTANOS!</h1>
+                <form>
+                    <p>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" name="nombrecompleto">
+                    </p>
+                    <p>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="e-mail">
+                    </p>
+                    <p>
+                        <label for="telephone">Telefono/Celular</label>
+                        <input type="tel" name="telefono/celular">
+                    </p>
+                    <p>
+                        <label for="text">Motivo</label>
+                        <input type="text" name="motivo">
+                    </p>
+                    <p>
+                        <label for="text">Mensaje</label>
+                        <textarea name="mensaje" rows="#"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+                </form>
+            </div>
+            <div class="info-sitio">
+            <p>Este sitio web no es el oficial, se hizo con fines de aprendizaje y motivacion</p>
+            <p>Desarrollador: Gonzalo Goldman</p>
+            </div>
+        </div>    
     </section>
 
     <footer class="footer">
